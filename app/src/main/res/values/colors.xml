@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="shadowPurpleGrey">#DC524D5E</color>
+    <color name="shadowBackground">#B0787580</color>
+    <color name="dialogColor">#D7CDBAFA</color>
+    <color name="lightYellow">#E2E3D6B2</color>
+    <color name="creamy">#86E3CC89</color>
+    <color name="creamy3">#5EE3CC89</color>
+    <color name="creamy2">#66E3CC89</color>
+    <color name="pinkishPurple">#8034B6</color>
+    <color name="purple">#33135E</color>
+    <color name="darkPurple">#1E083C</color>
+    <color name="yellow">#FF0</color>
+</resources>

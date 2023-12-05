@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creamy2">
+
+    <ProgressBar
+        android:id="@+id/progressBarVida"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="50"
+        android:progressTint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewVida"
+        app:layout_constraintStart_toEndOf="@+id/textViewVida"
+        app:layout_constraintStart_toStartOf="@+id/progressBarMagia"
+        app:layout_constraintTop_toTopOf="@+id/textViewVida"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textViewVidaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poderesVidaFinal"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarVida"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMagiaFinal"
+        app:layout_constraintTop_toTopOf="@+id/progressBarVida"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textViewMagiaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poderesMagiaFinal"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarMagia"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFuerzaFinal"
+        app:layout_constraintTop_toTopOf="@+id/progressBarMagia"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textViewVelocidadFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poderesVelocidadFinal"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarVelocidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toEndOf="@+id/progressBarVelocidad"
+        app:layout_constraintTop_toTopOf="@+id/progressBarVelocidad"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textViewFuerzaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poderesFuerzaFinal"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarFuerza"
+        app:layout_constraintEnd_toEndOf="@+id/textViewVelocidadFinal"
+        app:layout_constraintTop_toTopOf="@+id/progressBarFuerza"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <ProgressBar
+        android:id="@+id/progressBarMagia"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progressTint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMagia"
+        app:layout_constraintStart_toEndOf="@+id/textViewMagia"
+        app:layout_constraintStart_toStartOf="@+id/progressBarFuerza"
+        app:layout_constraintTop_toTopOf="@+id/textViewMagia" />
+
+    <ProgressBar
+        android:id="@+id/progressBarFuerza"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progressTint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFuerza"
+        app:layout_constraintStart_toEndOf="@+id/textViewFuerza"
+        app:layout_constraintStart_toStartOf="@+id/progressBarVelocidad"
+        app:layout_constraintTop_toTopOf="@+id/textViewFuerza"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ProgressBar
+        android:id="@+id/progressBarVelocidad"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progressTint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewVelocidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toEndOf="@+id/textViewVelocidad"
+        app:layout_constraintTop_toTopOf="@+id/textViewVelocidad"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/textViewVida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poderesVida"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewMagia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <TextView
+        android:id="@+id/textViewMagia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/poderesMagia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFuerza"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVida"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/textViewFuerza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/poderesFuerza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewVelocidad"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMagia"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewVelocidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/poderesVelocidad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFuerza"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/textViewInitialName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/darkPurple"
+        android:shadowRadius="20"
+        android:text="@string/nameFinal"
+        android:textColor="@color/lightYellow"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <ImageView
+        android:id="@+id/initialImage"
+        android:layout_width="247dp"
+        android:layout_height="241dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57"
+        tools:src="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

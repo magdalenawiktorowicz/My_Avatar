@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">My Avatar</string>
+    <string name="btnGenerar">Generar Mi Avatar</string>
+    <string name="nombre">NOMBRE:</string>
+    <string name="nombrePlaceholder">Escribe tu nombre...</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="missingInput">No has escrito nada...</string>
+    <string name="gender">SEXO:</string>
+    <string name="female">Mujer</string>
+    <string name="male">Hombre</string>
+    <string name="missingRadio">No has seleccionado ninguna opción...</string>
+    <string name="species">ESPECIE:</string>
+    <string name="missingChoice">No has seleccionado ninguna opción...</string>
+    <string-array name="listaSpecies">
+        <item name="speciesSelect">Elige la especie...</item>
+        <item name="elf">Elfo</item>
+        <item name="dwarf">Enano</item>
+        <item name="hobbit">Hobbit</item>
+        <item name="human">Humano</item>
+    </string-array>
+    <string name="profession">PROFESIÓN:</string>
+    <string-array name="listaProfession">
+        <item name="professionSelect">Elige la profesión...</item>
+        <item name="archer">Arquero</item>
+        <item name="warrior">Guerrero</item>
+        <item name="wizard">Mago</item>
+        <item name="blacksmith">Herrero</item>
+        <item name="miner">Minero</item>
+    </string-array>
+    <string name="nameFinal">...</string>
+    <string name="poderes">PODERES:</string>
+    <string name="poderesVida">Vida:</string>
+    <string name="poderesMagia">Magia:</string>
+    <string name="poderesFuerza">Fuerza:</string>
+    <string name="poderesVelocidad">Velocidad:</string>
+    <string name="poderesVidaFinal">0/100</string>
+    <string name="poderesMagiaFinal">0/10</string>
+    <string name="poderesFuerzaFinal">0/20</string>
+    <string name="poderesVelocidadFinal">0/5</string>
+</resources>

@@ -3,7 +3,6 @@
     <style name="styles" parent="@style/Base.Theme.MyAvatar">
         <item name="android:textColor">@color/purple</item>
         <item name="android:textViewStyle">@style/styles.TextView</item>
-        <item name="android:editTextStyle">@style/styles.EditTextView</item>
         <item name="hintTextAppearance">@style/HintText</item>
     </style>
     <style name="styles.TextView" parent="Widget.AppCompat.TextView">
@@ -16,17 +15,13 @@
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-    <style name="styles.EditTextView" parent="Widget.AppCompat.EditText">
-        <item name="android:fontFamily">casual</item>
-        <item name="android:elegantTextHeight">true</item>
-        <item name="android:shadowColor">@color/shadowPurpleGrey</item>
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
-        <item name="android:textColor">@color/purple</item>
-        <item name="android:textSize">20sp</item>
-    </style>
     <style name="HintText" parent="TextAppearance.Design.Hint">
         <item name="android:textColor">@color/pinkishPurple</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">italic</item>
+    </style>
+    <style name="styles.TextView.Edit">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/purple</item>
     </style>
 </resources>

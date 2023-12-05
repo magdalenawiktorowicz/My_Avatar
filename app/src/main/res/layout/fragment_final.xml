@@ -136,41 +136,54 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.631" />
 
-    <TextView
+    <EditText
         android:id="@+id/textViewVidaFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:singleLine="false"
         android:text="@string/poderesVidaFinal"
+        android:textAppearance="@style/styles.TextView"
+        android:textColor="@color/purple"
         app:layout_constraintBottom_toBottomOf="@+id/progressBarVida"
         app:layout_constraintEnd_toEndOf="@+id/textViewMagiaFinal"
         app:layout_constraintTop_toTopOf="@+id/progressBarVida"
         app:layout_constraintVertical_bias="0.72" />
 
-    <TextView
+    <EditText
         android:id="@+id/textViewMagiaFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/transparent"
         android:text="@string/poderesMagiaFinal"
+        android:textAppearance="@style/styles.TextView"
+        android:textColor="@color/purple"
         app:layout_constraintBottom_toBottomOf="@+id/progressBarMagia"
         app:layout_constraintEnd_toEndOf="@+id/textViewFuerzaFinal"
         app:layout_constraintTop_toTopOf="@+id/progressBarMagia"
         app:layout_constraintVertical_bias="0.76" />
 
-    <TextView
+    <EditText
         android:id="@+id/textViewFuerzaFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/transparent"
         android:text="@string/poderesFuerzaFinal"
+        android:textAppearance="@style/styles.TextView"
+        android:textColor="@color/purple"
         app:layout_constraintBottom_toBottomOf="@+id/progressBarFuerza"
         app:layout_constraintEnd_toEndOf="@+id/textViewVelocidadFinal"
         app:layout_constraintTop_toTopOf="@+id/progressBarFuerza"
         app:layout_constraintVertical_bias="0.72" />
 
-    <TextView
+    <EditText
         android:id="@+id/textViewVelocidadFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/transparent"
         android:text="@string/poderesVelocidadFinal"
+        android:textAppearance="@style/styles.TextView"
+        android:textColor="@color/purple"
         app:layout_constraintBottom_toBottomOf="@+id/progressBarVelocidad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.704"

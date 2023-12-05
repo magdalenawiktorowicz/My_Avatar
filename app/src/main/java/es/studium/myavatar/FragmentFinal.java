@@ -7,26 +7,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class FragmentFinal extends Fragment {
-    final static int vida;
-    final static int magia;
-    final static int fuerza;
-    final static int velocidad;
-    // static initializer runs only once
-    static {
-        // generar números aleatorios para los poderes
-        vida = (int) (Math.random() * 100);
-        magia = (int) (Math.random() * 10);
-        fuerza = (int) (Math.random() * 20);
-        velocidad = (int) (Math.random() * 5);
-    }
+    int vida = (int) (Math.random() * 100);
+    int magia = (int) (Math.random() * 10);
+    int fuerza = (int) (Math.random() * 20);
+    int velocidad = (int) (Math.random() * 5);
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -37,7 +31,7 @@ public class FragmentFinal extends Fragment {
     TextView txtViewName;
     ImageView avatar;
     ProgressBar pgVida, pgMagia, pgFuerza, pgVelocidad;
-    TextView txtViewVida, txtViewMagia, txtViewFuerza, txtViewVelocidad;
+    EditText editViewVida, editViewMagia, editViewFuerza, editViewVelocidad;
 
     public FragmentFinal() {
         // Required empty public constructor
@@ -96,19 +90,19 @@ public class FragmentFinal extends Fragment {
         pgVelocidad = view.findViewById(R.id.progressBarVelocidad);
 
         // asociar los TextViews de la vista con los objetos en Java
-        txtViewVida = view.findViewById(R.id.textViewVidaFinal);
-        txtViewMagia = view.findViewById(R.id.textViewMagiaFinal);
-        txtViewFuerza = view.findViewById(R.id.textViewFuerzaFinal);
-        txtViewVelocidad = view.findViewById(R.id.textViewVelocidadFinal);
+        editViewVida = view.findViewById(R.id.textViewVidaFinal);
+        editViewMagia = view.findViewById(R.id.textViewMagiaFinal);
+        editViewFuerza = view.findViewById(R.id.textViewFuerzaFinal);
+        editViewVelocidad = view.findViewById(R.id.textViewVelocidadFinal);
 
         // establecer los poderes
         pgVida.setProgress(vida);
-        txtViewVida.setText(vida + "/100");
+        editViewVida.setText(vida + "/100");
         pgMagia.setProgress(magia);
-        txtViewMagia.setText(magia + "/10");
+        editViewMagia.setText(magia + "/10");
         pgFuerza.setProgress(fuerza);
-        txtViewFuerza.setText(fuerza + "/20");
+        editViewFuerza.setText(fuerza + "/20");
         pgVelocidad.setProgress(velocidad);
-        txtViewVelocidad.setText(velocidad + "/5");
+        editViewVelocidad.setText(velocidad + "/5");
     }
 }
